@@ -5,7 +5,7 @@ var mySQL = require('./controller/mysql');
 var date = require('common').date;
 var _Time_ = 1000;
 // 定时执行
-task({h: [22], m: [45]}, function () {
+task({h: [23], m: [42]}, function () {
   // sql获取 账号密码
   mySQL.getUserInfo('select * from user', function (res) {
     var $accounts = res
