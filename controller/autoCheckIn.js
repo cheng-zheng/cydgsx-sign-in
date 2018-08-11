@@ -1,5 +1,5 @@
 var request = require('superagent');
-//var sendEmail = require('./sendEmail');
+var date = require('../common').date;
 
 var headers = {
   'cache-control': 'private',
@@ -42,7 +42,7 @@ AutoCheckIn.prototype = {
     var that = this;
 
     that.checkIn(function () {
-      console.log('======', '签到完毕，' + that.account.username, '======');
+      console.log(date.getHMS() + ' 签到完毕:' + that.account.username);
     });
   },
 
