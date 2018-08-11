@@ -4,7 +4,7 @@ var autoCheckIn = require('./controller/autoCheckIn');
 var mySQL = require('./controller/mysql');
 var _Time_ = 1000;
 // 定时执行
-task({h: [17], m: [03]}, function () {
+task({h: [22], m: [45]}, function () {
   // sql获取 账号密码
   mySQL.getUserInfo('select * from user', function (res) {
     var $accounts = res
