@@ -2,10 +2,10 @@
 var task = require('./controller/task');
 var autoCheckIn = require('./controller/autoCheckIn');
 var mySQL = require('./controller/mysql');
-var date = require('common').date;
+var date = require('./common').date;
 var _Time_ = 1000;
 // 定时执行
-task({h: [23], m: [33]}, function () {
+task({h: [23], m: [37]}, function () {
   // sql获取 账号密码
   mySQL.getUserInfo('select * from user', function (res) {
     var $accounts = res
