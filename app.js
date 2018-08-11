@@ -6,7 +6,7 @@ var _Time_ = 1000;
 // 定时执行
 task({h: [17], m: [03]}, function () {
   // sql获取 账号密码
-  mySQL.getUserInfo('select * from user2', function (res) {
+  mySQL.getUserInfo('select * from user', function (res) {
     var $accounts = res
     // 打乱
     $accounts.sort(function () {
@@ -17,7 +17,7 @@ task({h: [17], m: [03]}, function () {
       setTimeout(function () {
         autoCheckIn(v);
       }, _Time_);
-      _Time_ += 1000;
+      _Time_ += 5000;//1000等于1秒
     });
 
   });
