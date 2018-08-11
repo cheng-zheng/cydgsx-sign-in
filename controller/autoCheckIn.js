@@ -17,7 +17,7 @@ var origin = 'https://hzjs.cydgsx.com',
     checkIn: origin + '/m/s/Log/SaveWriteLog'
   };
 var InternStateId = ["2","3","4"];
-var interContent = ["","哈哈哈嗝", "今天俺","记得签到",""];
+var interContent = ["","哈哈哈嗝", "","记得签到",""];
 
 /**
  * 自动签到
