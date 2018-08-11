@@ -78,6 +78,7 @@ AutoCheckIn.prototype = {
         }else {
           console.log(err);
           console.log(result);
+          return;
         }
 
       });

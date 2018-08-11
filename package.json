@@ -1,0 +1,40 @@
+{
+  "name": "cydgsx-sign-in",
+  "version": "1.0.0",
+  "description": "闯越自动签到",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "_inherits@2.0.3@inherits": "^2.0.3",
+    "_bignumber.js@4.1.0@bignumber.js": "^4.1.0",
+    "_core-util-is@1.0.2@core-util-is": "^1.0.2",
+    "_later@1.2.0@later": "^1.2.0",
+    "_isarray@1.0.0@isarray": "^1.0.0",
+    "_mysql@2.16.0@mysql": "^2.16.0",
+    "_nan@2.10.0@nan": "^2.10.0",
+    "_readable-stream@2.3.6@readable-stream": "^2.3.6",
+    "_process-nextick-args@2.0.0@process-nextick-args": "^2.0.0",
+    "_sleep@5.2.3@sleep": "^5.2.3",
+    "_safe-buffer@5.1.2@safe-buffer": "^5.1.2",
+    "_sqlstring@2.3.1@sqlstring": "^2.3.1",
+    "_string_decoder@1.1.1@string_decoder": "^1.1.1",
+    "_util-deprecate@1.0.2@util-deprecate": "^1.0.2",
+    "superagent": "^3.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheng-zheng/cydgsx-sign-in.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheng-zheng/cydgsx-sign-in/issues"
+  },
+  "homepage": "https://github.com/cheng-zheng/cydgsx-sign-in#readme"
+}
