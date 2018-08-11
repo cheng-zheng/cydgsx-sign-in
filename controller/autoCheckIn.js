@@ -42,7 +42,6 @@ AutoCheckIn.prototype = {
     var that = this;
 
     that.checkIn(function () {
-      //sendEmail(that.account.user + '，签到完毕。 ' + new Date());
       console.log('======', '签到完毕，' + that.account.username, '======');
     });
   },
