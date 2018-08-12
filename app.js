@@ -3,22 +3,18 @@ var task = require('./controller/task');
 var autoCheckIn = require('./controller/autoCheckIn');
 var mySQL = require('./controller/mysql');
 var date = require('./common').date;
-var _Time_ = 1000;
+
 // 定时执行
 task({h: [17], m: [0]}, function () {
+  var _Time_ = 1000;
   // sql获取 账号密码
-  mySQL.getUserInfo('select * from user', function (res) {
-    var $accounts = res
-    // 打乱
-    $accounts.sort(function () {
-      return (0.5 - Math.random());
-    });
+  mySQL.getUserInfo('SELECT * FROM user ORDER BY RAND()', function (res) {
     // 延迟执行
-    $accounts.forEach(function (v) {
+    res.forEach(function (v) {
       setTimeout(function () {
         autoCheckIn(v);
       }, _Time_);
-      _Time_ += 60000;//1000等于1秒
+      _Time_ += ( 60000 + Math.round( Math.random()*10000) ) ;//1000等于1秒
     });
 
   });
