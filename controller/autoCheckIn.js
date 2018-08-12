@@ -76,7 +76,8 @@ AutoCheckIn.prototype = {
           cb(that.cookie);
         }else {
           console.log(err);
-          console.log(result);
+          console.log(that.account.username);
+          console.log(result.body);
           return;
         }
 
