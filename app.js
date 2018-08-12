@@ -2,7 +2,7 @@
 var task = require('./controller/task');
 var autoCheckIn = require('./controller/autoCheckIn');
 var mySQL = require('./controller/mysql');
-var date = require('./common').date;
+//var date = require('./common').date;
 
 // 定时执行
 task({h: [17], m: [0]}, function () {
@@ -32,4 +32,4 @@ task({h: [17], m: [0]}, function () {
   });
 });*/
 
-console.log(date.getYMD() + ' 自动签到服务运行中..');
+console.log( ' 自动签到服务运行中..');

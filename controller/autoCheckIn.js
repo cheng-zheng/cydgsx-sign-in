@@ -42,7 +42,8 @@ AutoCheckIn.prototype = {
     var that = this;
 
     that.checkIn(function () {
-      console.log(date.getHMS() + ' 签到完毕:' + that.account.username);
+      console.log(' 签到完毕:' + that.account.username);
+      console.log(new Date());
     });
   },
 
