@@ -32,4 +32,4 @@ task({h: [17], m: [0]}, function () {
   });
 });*/
 
-console.log( ' 自动签到服务运行中..');
+console.log(new Date() + ' 自动签到服务运行中..');

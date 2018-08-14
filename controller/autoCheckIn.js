@@ -17,7 +17,7 @@ var origin = 'https://hzjs.cydgsx.com',
     checkIn: origin + '/m/s/Log/SaveWriteLog'
   };
 var InternStateId = ["2","3","4"];
-var interContent = ["","哈哈哈嗝", "","记得签到",""];
+var interContent = ["忙成狗","哈哈哈嗝", "睡觉吧 狗命要紧","记得签到","哼！","今天又学到了东西","啦啦啦","不知所措","一脸懵逼.jpg","感到鸭梨","扎心了 老铁","顿墙角。jpg"];
 
 /**
  * 自动签到
@@ -43,7 +43,6 @@ AutoCheckIn.prototype = {
 
     that.checkIn(function () {
       console.log(' 签到完毕:' + that.account.username);
-      console.log(new Date());
     });
   },
 
