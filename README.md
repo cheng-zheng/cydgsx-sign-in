@@ -1,11 +1,15 @@
 # cydgsx-sign-in
-闯越自动签到
+######闯越自动签到
 
+- 首先要懂 node,linux,sql
+- linux安装依赖包
 	npm install superagent
 	npm install later
 	npm install mysql
-## node后台运行
 	npm install forever -g
+
+## node后台运行
+	
 	forever start app.js
 
 
