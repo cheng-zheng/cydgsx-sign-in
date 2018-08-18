@@ -1,7 +1,7 @@
 # cydgsx-sign-in
 ### 闯越自动签到
 
-- 首先要懂 node,linux,sql
+- 首先要懂点 node,linux,sql
 
 ## linux安装依赖包
 	
@@ -15,7 +15,7 @@
 	forever start app.js
 
 
-#
+## MySQL
 	CREATE TABLE `user` (
 	  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
 	  `user_name` varchar(255) NOT NULL,
