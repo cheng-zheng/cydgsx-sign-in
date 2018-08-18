@@ -1,5 +1,5 @@
 # cydgsx-sign-in
-####闯越自动签到
+###闯越自动签到
 
 - 首先要懂 node,linux,sql
 ##linux安装依赖包
