@@ -3,6 +3,7 @@
 
 - 首先要懂 node,linux,sql
 - linux安装依赖包
+-
 	npm install superagent
 	npm install later
 	npm install mysql
