@@ -2,6 +2,7 @@
 ###闯越自动签到
 
 - 首先要懂 node,linux,sql
+
 ##linux安装依赖包
 	
 	npm install superagent
