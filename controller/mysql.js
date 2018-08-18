@@ -18,6 +18,8 @@ exports.getUserInfo = function (sql,fun) {
       accounts.push({
         username: item.user_name,
         UserPwd: item.user_pwd,
+        isContent: item.is_content,
+        content: JSON.parse(item.content)
       })
     });
     return fun(accounts);

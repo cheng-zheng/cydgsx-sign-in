@@ -95,11 +95,29 @@ AutoCheckIn.prototype = {
         .set('Cookie', cookie.value)
         .type('form')
         .send({
-          InternStateId:InternStateId[Math.floor(Math.random()*InternStateId.length)],
-          interContent:interContent[Math.floor(Math.random()*interContent.length)]
+          InternStateId:that._writeInterState(),
+          interContent:that._writeInterContent()
         })
         .end(cb);
     });
+  },
+  // 写内容
+  _writeInterState:function () {
+    //数据库 为1 就自定义签到内容
+    if(this.account.isContent == 1){
+      var IC = this.account.content.InternState;
+      return IC[Math.floor(Math.random()*IC.length)]
+    }
+    return InternStateId[Math.floor(Math.random()*InternStateId.length)]
+  },
+  // 写内容
+  _writeInterContent:function () {
+    //数据库 为1 就自定义签到内容
+    if(this.account.isContent == 1){
+      var IC = this.account.content.InterContent;
+      return IC[Math.floor(Math.random()*IC.length)]
+    }
+    return interContent[Math.floor(Math.random()*interContent.length)]
   }
 };
 

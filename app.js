@@ -18,18 +18,7 @@ task({h: [17], m: [0]}, function () {
     });
 
   });
-
+  console.log(new Date() + ' 开始签到..');
 });
-// 定时执行
-/*task({h: [17], m: [03]}, function () {
 
-  $accounts.forEach(function (v) {
-    setTimeout(function () {
-      autoCheckIn(v);
-    },_Time_);
-    _Time_ += 1000;
-    ;
-  });
-});*/
-
-console.log(new Date() + ' 自动签到服务运行中..');
+console.log('自动签到服务运行中..');
